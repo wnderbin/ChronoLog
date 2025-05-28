@@ -227,8 +227,7 @@ func (l *Logger) write(level LogLevel, message string) {
 			fmt.Fprintf(os.Stderr, "failed to marshal log entry: %v\n", err)
 			return
 		}
-		logLine = string(jsonData) + ","
-		fmt.Fprint(l.file, logLine)
+		logLine = string(jsonData) + "\n"
 	} else {
 		logLine = fmt.Sprintf("%s - [%s]: %s", entry.Timestamp, level.String(), message)
 		logLine += "\n"
