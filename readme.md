@@ -1,6 +1,8 @@
 # ChronoLog
 **Convenient, lightweight and understandable logging-tool for Golang**
 
+[![ChronoLog-Tests](https://github.com/wnderbin/ChronoLog/actions/workflows/chronolog_tests.yml/badge.svg)](https://github.com/wnderbin/ChronoLog/actions/workflows/chronolog_tests.yml)
+
 ChronoLog is designed as part of a logging system, as it works well with files. It is not a complete solution, but only a component for working with logging and its management.
 
 ChronoLog is a package for writing logs to files. The package is a lightweight and easy-to-use tool that writes data in json format and in plain text.
