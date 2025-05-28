@@ -215,7 +215,7 @@ func (l *Logger) write(level LogLevel, message string) {
 	defer l.mu.Unlock()
 
 	entry := LogEntry{
-		Timestamp: time.Now().Format(time.RFC3339),
+		Timestamp: time.Now().Format(l.config.TimestampFormat),
 		Level:     level.String(),
 		Message:   message,
 	}
