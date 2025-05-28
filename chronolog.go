@@ -228,6 +228,7 @@ func (l *Logger) write(level LogLevel, message string) {
 			return
 		}
 		logLine = string(jsonData) + "\n"
+		fmt.Fprint(l.file, logLine)
 	} else {
 		logLine = fmt.Sprintf("%s - [%s]: %s", entry.Timestamp, level.String(), message)
 		logLine += "\n"
