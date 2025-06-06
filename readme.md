@@ -1,5 +1,5 @@
 # ChronoLog
-**Convenient, lightweight and understandable logging-tool for Golang**
+**Convenient, lightweight and understandable logging-tool for Golang.**
 
 [![ChronoLog-Tests](https://github.com/wnderbin/ChronoLog/actions/workflows/chronolog_tests.yml/badge.svg)](https://github.com/wnderbin/ChronoLog/actions/workflows/chronolog_tests.yml)
 
